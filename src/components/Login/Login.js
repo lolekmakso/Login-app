@@ -1,3 +1,4 @@
+import Checkbox from "../UI/Checkbox/Checkbox";
 import GoogleIcon from "../icons/GoogleIcon";
 import "./Login.scss";
 
@@ -28,10 +29,9 @@ function Login() {
         </label>
 
         <div className="form__row">
-          <label>
-            <input type="checkbox" className="form__checkbox" />
-            <span className="form__title">Remember me</span>
-          </label>
+          
+          <Checkbox title="Remember me"/>
+          
           <a href="/">Forgot Password?</a>
         </div>
 

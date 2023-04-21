@@ -1,0 +1,43 @@
+.checkbox {
+  gap: 8px;
+  cursor: pointer;
+  &__input {
+    display: none;
+    &:checked ~ .checkbox__checkmark {
+      background: #5429ff;
+      border-color: #5429ff;
+
+      svg {
+        transform: scale(1);
+      }
+    }
+  }
+
+  &__title {
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #344054;
+  }
+
+  &__checkmark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #d0d5dd;
+    border-radius: 4px;
+    width: 16px;
+    height: 16px;
+    transition: 0.15s all ease-in-out;
+
+    svg {
+      width: 12px;
+      height: 12px;
+      display: inline-block;
+      fill: #fff;
+      transition: 0.15s all ease-in-out;
+      transform: scale(0);
+    }
+  }
+}
