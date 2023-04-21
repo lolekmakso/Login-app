@@ -1,0 +1,121 @@
+@import "src/scss/vars.scss";
+
+.login {
+  max-width: 500px;
+  margin-inline: auto;
+  padding: 0 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__title {
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: $secondary;
+    margin-bottom: 8px;
+  }
+
+  &__desc {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $accent;
+    margin-bottom: 56px;
+  }
+
+  &__google {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 44px;
+    margin-top: 16px;
+    border: 1px solid #d0d5dd;
+    border-radius: 8px;
+    max-width: 360px;
+
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: $secondary;
+  }
+
+  &__sign-up {
+    text-align: center;
+    margin-top: 20px;
+
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: $secondary;
+  }
+}
+
+.form {
+  display: grid;
+  gap: 20px;
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__title {
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: $secondary;
+  }
+
+  &__input {
+    padding: 10px 0 10px 14px;
+    max-width: 360px;
+    border: 1px solid #d0d5dd;
+    border-radius: 8px;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $accent;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+
+    label{
+        display: flex;
+        align-items: center;
+    }
+
+    a {
+      font-family: "Inter";
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: $primary;
+    }
+  }
+
+  &__submit {
+    height: 44px;
+    max-width: 360px;
+    background: #5429ff;
+    border-radius: 8px;
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    border: none;
+  }
+}
